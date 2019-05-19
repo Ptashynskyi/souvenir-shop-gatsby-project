@@ -92,7 +92,7 @@ export default class product extends Component {
                         <h6 className="mb-0">
                           <small>{node.price}$</small>
                         </h6>
-                        <button className="btn btn-Seawave mt-3 text-capitalize">
+                        <button className="btn btn-Seawave my-3 text-capitalize">
                           аdd to order
                         </button>
                       </div>
