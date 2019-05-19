@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
 import logo from "../../images/logo.svg"
-import { FaCartArrowDown } from "react-icons/fa"
+import { MdAccountBalanceWallet } from "react-icons/md"
 
 export default class Navbar extends Component {
   state = {
@@ -56,7 +56,7 @@ export default class Navbar extends Component {
               )
             })}
             <li className="nav-utem ml-sm-5" />
-            <FaCartArrowDown className="cart-icon" />
+            <MdAccountBalanceWallet className="cart-icon snipcart-checkout" />
           </ul>
         </div>
       </nav>
