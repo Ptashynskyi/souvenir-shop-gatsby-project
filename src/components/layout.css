@@ -40,3 +40,11 @@ h2 {
 .product {
   background-color: var(--mainGrey);
 }
+.row {
+  justify-content: center;
+}
+.cart-body {
+  border: 2px solid #ffa00f;
+  background-color: var(--mainYellow);
+  border-radius: 5px;
+}

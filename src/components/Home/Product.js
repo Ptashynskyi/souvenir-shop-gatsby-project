@@ -82,16 +82,19 @@ export default class product extends Component {
                 return (
                   <div
                     key={node.id}
-                    className="col-11 col-md-6 my-3 d-flex mx-auto"
+                    className="col-12 col-sm-10 col-md-8 col-lg-6 mx-auto my-5"
                   >
-                    <div className="flex-grpw-1 px-3">
-                      <div className="flex justify-content-between">
+                    <div className="flex-grow-1 px-3">
+                      <div className="cart-body text-center">
                         <h6 className="mb-0">
                           <small>{node.title}</small>
                         </h6>
                         <h6 className="mb-0">
-                          <small>{node.price}</small>
+                          <small>{node.price}$</small>
                         </h6>
+                        <button className="btn btn-Seawave mt-3 text-capitalize">
+                          аdd to order
+                        </button>
                       </div>
                     </div>
                   </div>
