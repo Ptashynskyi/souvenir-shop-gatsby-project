@@ -22,5 +22,13 @@ h2 {
 .cart-icon {
   cursor: pointer;
   color: var(--mainOrange);
-  font-size: 3rem;
+  font-size: 2rem;
+}
+.btn-Seawave {
+  color: var(--mainSeawave);
+  border-color: var(--mainSeawave);
+}
+.btn-Seawave:hover {
+  background-color: var(--mainSeawave);
+  color: var(--mainWhite);
 }
