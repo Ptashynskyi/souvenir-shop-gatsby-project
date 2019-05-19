@@ -5,6 +5,7 @@
   --mainRed: #ff0f43;
   --mainWhite: #ffff;
   --mainDark: black;
+  --mainGrey: #f8f9fa;
 }
 body {
   background: var(--mainWhite);
@@ -35,4 +36,7 @@ h2 {
 .footer {
   background: var(--mainSeawave);
   height: 20vh;
+}
+.product {
+  background-color: var(--mainGrey);
 }
