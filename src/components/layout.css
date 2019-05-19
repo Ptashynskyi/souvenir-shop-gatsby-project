@@ -32,3 +32,7 @@ h2 {
   background-color: var(--mainSeawave);
   color: var(--mainWhite);
 }
+.footer {
+  background: var(--mainSeawave);
+  height: 20vh;
+}

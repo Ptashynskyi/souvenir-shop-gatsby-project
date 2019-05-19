@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+//Add for using env varib. Learn more https://www.gatsbyjs.org/docs/environment-variables/
 module.exports = {
   siteMetadata: {
     title: `Souvenir Shop`,
@@ -11,6 +15,15 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        // Add env (Environment Variables) for security and add file(where spaceId and accessToken) which moved to gitignore
+        //Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
     `gatsby-transformer-sharp`,
