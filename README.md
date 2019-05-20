@@ -1,3 +1,17 @@
+#start app
+
+1. You can use app here https://souvenir-shop.netlify.com/
+2. Gatsby is used for deployment.
+3. I used it to easily add a new product by users - https://www.contentful.com/. When a user adds a new category or item, they become available and function like already existing ones.
+4. Cart app is used to store all information about purshase https://snipcart.com/
+
+# command for compile:
+
+gatsby develop
+
+#contributor
+Nazar Ptashynskyi
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
