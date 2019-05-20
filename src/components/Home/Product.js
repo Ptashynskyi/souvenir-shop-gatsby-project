@@ -92,7 +92,14 @@ export default class product extends Component {
                         <h6 className="mb-0">
                           <small>{node.price}$</small>
                         </h6>
-                        <button className="btn btn-Seawave my-3 text-capitalize snipcart-add-item">
+                        {/*додали сервіс snipcart. https://docs.snipcart.com/configuration/product-definition*/}
+                        <button
+                          className="btn btn-Seawave my-3 text-capitalize snipcart-add-item"
+                          data-item-id={node.id}
+                          data-item-name={node.title}
+                          data-item-price={node.price}
+                          data-item-url="https://souvenir-shop.netlify.com/"
+                        >
                           аdd to order
                         </button>
                       </div>
@@ -110,13 +117,7 @@ export default class product extends Component {
           <div className="container">
             <Title title="all product" />
             <div className="row" />
-            <div
-              className="col-10 col-sm-6 ma-auto test-center text-capitalize"
-              data-item-id={product.id}
-              data-item-name={product.title}
-              data-item-price={product.price}
-              data-item-url="https://souvenir-shop.netlify.com/"
-            >
+            <div className="col-10 col-sm-6 ma-auto test-center text-capitalize">
               ><h1>There are no product to display</h1>
             </div>
           </div>
@@ -125,3 +126,7 @@ export default class product extends Component {
     }
   }
 }
+//data - item - id={ product.id }
+//data - item - name={ product.title }
+//data - item - price={ product.price }
+//data - item - url="https://souvenir-shop.netlify.com/"
