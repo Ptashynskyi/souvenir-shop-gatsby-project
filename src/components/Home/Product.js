@@ -1,24 +1,21 @@
 import React, { Component } from "react"
 import Title from "../Globals/Title"
-import Img from "gatsby-image"
 const getCategories = items => {
   let sortItems = items.map(items => {
     return items.node.category
   })
-  {
-    /*в нашому випадку це б задовільнило пошук по категорія, бо 1 товару в списку, проте при добавленні більше товарів, воно відасть більшу кількість масивів, тут просто ф-ція віддає категорії товару*/
-  }
+
+  /*in our case, it would satisfy the search by category, because 1 product in the list, but when adding more goods, it will instruct more arrays, here just the f-tion gives the category of goods*/
+
   let sortCategories = new Set(sortItems)
   let categories = Array.from(sortCategories)
   categories = ["All", ...categories]
   return categories
-  {
-    /*повертає посортовані в 4 категорії товари і додає новий масив з усіма товарами*/
-  }
 }
-{
-  /*{Під цим дані взяті з GraphQL}*/
-}
+/*returns sorted in 4 categories of goods and adds a new array with all the goods*/
+
+/*Below data from GraphQL*/
+
 export default class product extends Component {
   constructor(props) {
     super(props)
@@ -31,24 +28,24 @@ export default class product extends Component {
 
   processItem = category => {
     let sortItems = [...this.state.items]
-    {
-      /*усі дані з GraphQL по одиницях товару*/
-    }
+
+    /*All GraphQL data per unit item*/
+
     if (category === "All") {
       this.setState(() => {
         return { souvenirProduct: sortItems }
-        {
-          /*якщо нажимаємо кнопку All передаємо усі товари*/
-        }
+
+        /*if we press the button 'All', we send all the goods
+         */
       })
     } else {
       let items = sortItems.filter(({ node }) => node.category === category)
       this.setState(() => {
         return { souvenirProduct: items }
       })
-      {
-        /*якщо категорія співпадає з категорією в GraphQL повертаэмо значення*/
-      }
+
+      /*
+If the category matches the category in GraphQL, return the value*/
     }
   }
   render() {
@@ -57,7 +54,8 @@ export default class product extends Component {
         <section className="product py-5">
           <div className="container">
             <Title title="all products" />
-            {/*категорії*/}
+            {/*
+category*/}
             <div className="div row mb-5">
               <div className="col-10 mx-auto text-center">
                 {this.state.categories.map((category, indexID) => {
@@ -76,7 +74,7 @@ export default class product extends Component {
                 })}
               </div>
             </div>
-            {/*товари*/}
+            {/*products*/}
             <div className="row">
               {this.state.souvenirProduct.map(({ node }) => {
                 return (
@@ -92,7 +90,7 @@ export default class product extends Component {
                         <h6 className="mb-0">
                           <small>{node.price}$</small>
                         </h6>
-                        {/*додали сервіс snipcart. https://docs.snipcart.com/configuration/product-definition*/}
+                        {/*added service snipcart. https://docs.snipcart.com/configuration/product-definition*/}
                         <button
                           className="btn btn-Seawave my-3 text-capitalize snipcart-add-item"
                           data-item-id={node.id}

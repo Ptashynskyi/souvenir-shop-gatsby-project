@@ -22,7 +22,8 @@ export default class Navbar extends Component {
   }
   navbarHandler = () => {
     this.state.navbarOpen
-      ? /*Тут ми прописуємо логіку для панельки(відкриття і закриття менюшки, щоб було зручно користуватись прогою через телефон) через тернарку з використанням бустрапівських команд*/
+      ? /*
+Here we write the logic for the toolbar (opening and closing the menu to make it easy to use the program through the phone) through the ternary using boostrape commands*/
         this.setState({ navbarOpen: false, css: "collapse navbar-collapse" })
       : this.setState({
           navbarOpen: true,

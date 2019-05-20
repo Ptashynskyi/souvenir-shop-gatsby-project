@@ -1,10 +1,6 @@
 import React from "react"
 
 export default function Title({ title }) {
-  /* Записуємо пропс, щоб юзати в iнших частинах програми */
-
-  /* Записуємо рядок, бо ми знаходимось в контейнері і дальше стилізуємо заголовок бустрапівськими прописами*/
-
   return (
     <div className="row">
       <div className="col text-center mb-3">

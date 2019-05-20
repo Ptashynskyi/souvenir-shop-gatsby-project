@@ -8,9 +8,7 @@ export default function info() {
         <div className="row">
           <Title title="How to use the service"> </Title>
           <div className="col-10 col-sm-8 mx-auto text-center">
-            {/*додаємо бустрапівські значення ширини в колонках для великого і малого екрану і центруємо*/}
             <p className="lead text-muted mb-5">
-              {/*робимо текст dтрішки жирнішим і більшим шрифтом, сірим і межі батона = 5*/}
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
               voluptatem impedit aliquam consequuntur soluta expedita et illo
               nesciunt nobis iusto ullam obcaecati deserunt dolorum modi iste
