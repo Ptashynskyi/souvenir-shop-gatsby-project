@@ -56,7 +56,7 @@ export default class product extends Component {
       return (
         <section className="product py-5">
           <div className="container">
-            <Title title="all product" />
+            <Title title="all products" />
             {/*категорії*/}
             <div className="div row mb-5">
               <div className="col-10 mx-auto text-center">
@@ -118,7 +118,7 @@ export default class product extends Component {
             <Title title="all product" />
             <div className="row" />
             <div className="col-10 col-sm-6 ma-auto test-center text-capitalize">
-              ><h1>There are no product to display</h1>
+              ><h1>There are no products to display</h1>
             </div>
           </div>
         </section>
@@ -126,7 +126,3 @@ export default class product extends Component {
     }
   }
 }
-//data - item - id={ product.id }
-//data - item - name={ product.title }
-//data - item - price={ product.price }
-//data - item - url="https://souvenir-shop.netlify.com/"
